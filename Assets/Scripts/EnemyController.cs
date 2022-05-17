@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour
+public class EnemyController : MonoBehaviour
 {
     [SerializeField] float moveSpeed = 0.1f;
 
@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float sprintMod = 0.1f;
 
     [SerializeField] float sprintMaxTimer = 1.4f;
+    [SerializeField] bool canSprint = false;
 
     Mover mover;
 
@@ -20,14 +21,15 @@ public class PlayerController : MonoBehaviour
     {
         mover = GetComponent<Mover>();
 
-        mover.SetMover(moveSpeed, sprintSpeed, sprintMod, sprintMaxTimer);
+        if (canSprint)
+            mover.SetMover(moveSpeed, sprintSpeed, sprintMod, sprintMaxTimer);
+        else
+            mover.SetMover(moveSpeed);
     }
 
+    // Update is called once per frame
     void Update()
     {
-        horizontal = Input.GetAxis("Horizontal");
-        vertical = Input.GetAxis("Vertical");
         
-        mover.Move(horizontal, vertical);
     }
 }
