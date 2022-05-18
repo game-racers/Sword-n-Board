@@ -203,8 +203,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188046269}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.53, y: 10.6, z: 0}
-  m_LocalScale: {x: 0.40807977, y: 0.40807977, z: 1.360266}
+  m_LocalPosition: {x: -19.43, y: 20.51, z: 0}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -328,7 +328,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -352,7 +352,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: -2.6, y: 19.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -437,7 +437,7 @@ Transform:
   m_GameObject: {fileID: 592635361}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -478,12 +478,20 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.538
+      value: -1.06
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.883
+      value: 19.77
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -517,17 +525,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6078197958821320604, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320605, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: moveSpeed
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320605, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: sprintMod
-      value: 1.6
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320605, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: sprintMaxTimer
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6078197958821320606, guid: 8ff2597fe213c96429f8b7b2ed33d3cd, type: 3}
       propertyPath: m_Name

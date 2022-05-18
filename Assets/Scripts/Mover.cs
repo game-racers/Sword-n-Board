@@ -8,7 +8,7 @@ public class Mover : MonoBehaviour
 
     Rigidbody2D body;
 
-    float worldSpeedMod = 0.05f;
+    float worldSpeedMod = 0.1f;
     float moveSpeed = 1f;
     float horizontal;
     float vertical;
